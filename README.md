@@ -74,3 +74,38 @@ docker-compose up --build
 ## API Reference
 
 ### Health Check
+**Response:**
+```json
+{
+  "status": "ok",
+  "uptime": 3600
+}
+```
+
+### Authenticate
+**Body:**
+```json
+{
+  "username": "admin",
+  "password": "password123"
+}
+```
+
+**Response:**
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIs..."
+}
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/my-feature`)
+3. Commit your changes (`git commit -m 'Add my feature'`)
+4. Push to the branch (`git push origin feature/my-feature`)
+5. Open a Pull Request
+
+## License
+
+MIT © 2026 Your Organization
